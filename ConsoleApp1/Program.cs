@@ -1,0 +1,27 @@
+﻿Console.Clear();
+Console.ForegroundColor=ConsoleColor.Red;
+Console.WriteLine("Tap to get the information of worker's salary");
+Console.ForegroundColor=ConsoleColor.White;
+Console.ReadKey(true);
+await Task.Delay(2000);
+Console.Clear();
+Console.WriteLine("All the salaries are going to be counted with $3 for each hour");
+Console.ForegroundColor=ConsoleColor.Red;
+Console.WriteLine("\nPlease enter the number of hours the worker has worked");
+Console.ForegroundColor=ConsoleColor.White;
+await Task.Delay(2000);
+Console.Write("\nTime: ");
+var time=Convert.ToDouble(Console.ReadLine());
+var salary=time*3;
+var tax=salary*5/100;
+var recieved=salary-tax;
+await Task.Delay(2000);
+Console.Write("\nNet salary: $");
+Console.WriteLine(salary);
+await Task.Delay(1000);
+Console.Write("With a 5% tax: $");
+Console.WriteLine(tax);
+await Task.Delay(1000);
+Console.Write("Net amount recieved: $");
+Console.WriteLine(recieved);
+//base of project is done
