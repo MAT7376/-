@@ -13,7 +13,7 @@ await Task.Delay(2000);
 try
 {
     Console.Write("\nTime: ");
-    var time=Convert.ToInt32(Console.ReadLine());
+    var time=Convert.ToDouble(Console.ReadLine());
     var salary=time*3;
     var tax=salary*5/100;
     var recieved=salary-tax;
@@ -41,3 +41,8 @@ catch
 }    
 //base of project is done
 //"try-catch" added
+finally
+{
+    Console.WriteLine("Thanks for using salary calculator");
+}
+//"finally" added    
